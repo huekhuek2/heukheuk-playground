@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useEffect, useRef, useState, ReactNode } from 'react';
+import React, { useEffect, useRef, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { ExternalLink, Sparkles, Music, Youtube } from 'lucide-react';
+import { ExternalLink, Youtube } from 'lucide-react';
 
 // Utility for Tailwind classes
 function cn(...inputs: ClassValue[]) {
