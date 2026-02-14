@@ -210,7 +210,7 @@ export default function LinktreeLanding() {
                         </GlowCard>
 
                         {/* Card 2 */}
-                        <GlowCard onClick={() => handleUrlClick('https://kpop-idol-ai.vercel.app/')} hue={260}>
+                        <GlowCard onClick={() => handleUrlClick('https://huekhuek2-kpop-idol-ai.vercel.app/')} hue={260}>
                             <div className="flex items-start gap-4">
                                 <div className="p-3 rounded-lg bg-violet-500/10 text-violet-400">
                                     <span className="text-2xl">🎤</span>
