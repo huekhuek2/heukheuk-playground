@@ -192,6 +192,23 @@ export default function LinktreeLanding() {
 
                     {/* 2. App List Section */}
                     <div className="space-y-4">
+                        {/* New Card: AI Economic News */}
+                        <GlowCard onClick={() => handleUrlClick('https://auto-post-generator-nextjs.vercel.app/')} hue={200}>
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-lg bg-blue-500/10 text-blue-400">
+                                    <span className="text-2xl">📰</span>
+                                </div>
+                                <div className="flex-1 space-y-1">
+                                    <h3 className="text-lg font-semibold text-white/90">매일 아침 8시, AI 경제 뉴스</h3>
+                                    <p className="text-sm text-zinc-400 leading-snug">
+                                        AI가 배달하는 오늘의 경제 뉴스 요약<br />
+                                        <span className="text-xs text-zinc-500">(※ 바쁜 출근길 1분 컷)</span>
+                                    </p>
+                                </div>
+                                <ExternalLink size={16} className="text-zinc-600 mt-1" />
+                            </div>
+                        </GlowCard>
+
                         {/* Card 1 */}
                         <GlowCard onClick={() => handleUrlClick('https://beauty-ai.vercel.app/')} hue={320}>
                             <div className="flex items-start gap-4">
