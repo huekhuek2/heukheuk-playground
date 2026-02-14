@@ -225,6 +225,22 @@ export default function LinktreeLanding() {
                                 <ExternalLink size={16} className="text-zinc-600 mt-1" />
                             </div>
                         </GlowCard>
+
+                        {/* Card 3 */}
+                        <GlowCard onClick={() => handleUrlClick('https://v0-project-huekhuek.vercel.app/')} hue={150}>
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-lg bg-green-500/10 text-green-400">
+                                    <span className="text-2xl">💴</span>
+                                </div>
+                                <div className="flex-1 space-y-1">
+                                    <h3 className="text-lg font-semibold text-white/90">한일 생존 가계부</h3>
+                                    <p className="text-sm text-zinc-400 leading-snug">
+                                        돈 막 쓰던 과거는 안녕! 일본 외노자 생활 버티기용 짠내나는 돈 관리 앱
+                                    </p>
+                                </div>
+                                <ExternalLink size={16} className="text-zinc-600 mt-1" />
+                            </div>
+                        </GlowCard>
                     </div>
 
                     {/* 3. Footer Section */}
