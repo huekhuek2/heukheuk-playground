@@ -4,7 +4,7 @@ import React, { useEffect, useRef, type ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
-import { ExternalLink, Youtube } from 'lucide-react';
+import { ExternalLink, Youtube, Globe } from 'lucide-react';
 
 // Utility for Tailwind classes
 function cn(...inputs: ClassValue[]) {
@@ -192,6 +192,23 @@ export default function LinktreeLanding() {
 
                     {/* 2. App List Section */}
                     <div className="space-y-4">
+                        {/* New Card: Korea-Japan YouTubers */}
+                        <GlowCard onClick={() => handleUrlClick('https://nikkan-v4.vercel.app/')} hue={10}>
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-lg bg-red-500/10 text-red-400">
+                                    <Globe size={24} />
+                                </div>
+                                <div className="flex-1 space-y-1">
+                                    <h3 className="text-lg font-semibold text-white/90">한일 관계의 모든 유튜버!</h3>
+                                    <p className="text-sm text-zinc-400 leading-snug">
+                                        한국과 일본을 잇는 크리에이터 모음<br />
+                                        <span className="text-xs text-zinc-500">(※ 국경 없는 콘텐츠)</span>
+                                    </p>
+                                </div>
+                                <ExternalLink size={16} className="text-zinc-600 mt-1" />
+                            </div>
+                        </GlowCard>
+
                         {/* New Card: AI Economic News */}
                         <GlowCard onClick={() => handleUrlClick('https://auto-post-generator-nextjs.vercel.app/')} hue={200}>
                             <div className="flex items-start gap-4">
